@@ -23557,7 +23557,7 @@ void main() {
   }
   const jA = [
     {
-      path: "./static/models/ramenShop8.glb",
+      path: "/Portfolio/models/ramenShop8.glb",
       id: "environment",
       type: "model"
     }

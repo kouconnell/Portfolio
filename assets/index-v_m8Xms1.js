@@ -25384,7 +25384,7 @@ void main() {
     }
     instantiateLoaders() {
       const e = new D1();
-      e.setDecoderPath("/draco/"), this.gltfLoader = new ZA(), this.gltfLoader.setDRACOLoader(e), this.textureLoader = new Em();
+      e.setDecoderPath("/Portfolio/draco/"), this.gltfLoader = new ZA(), this.gltfLoader.setDRACOLoader(e), this.textureLoader = new Em();
     }
     startLoading() {
       this.assetsToLoad.forEach((e) => {

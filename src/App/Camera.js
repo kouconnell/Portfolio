@@ -19,6 +19,42 @@ export default class Camera{
         this.setInstance()
         this.setControls()
         this.setResizeLister()
+
+        this.cameraFolder = this.pane.addFolder({ title: 'camera' });
+        this.position = this.cameraFolder.addFolder({ title: 'cameraPosition' });
+        this.position.addBinding(this.instance.position, 'x', {
+            min: -40,
+            max: 20,
+            step: 0.1,
+        });
+        this.position.addBinding(this.instance.position, 'y', {
+            min: -20,
+            max: 20,
+            step: 0.1,
+        });
+        this.position.addBinding(this.instance.position, 'z', {
+            min: -20,
+            max: 100,
+            step: 0.1,
+        });
+        this.target = this.cameraFolder.addFolder({ title: 'cameraTarget' });
+        this.target.addBinding(this.controls.target, 'x', {
+            min: -20,
+            max: 20,
+            step: 0.1,
+        });
+        this.controls.target.y = 20;
+        this.target.addBinding(this.controls.target, 'y', {
+            min: -20,
+            max: 20,
+            step: 0.1,
+        });
+        this.target.addBinding(this.controls.target, 'z', {
+            min: -20,
+            max: 20,
+            step: 0.1,
+        });
+        this.cameraFolder.addBinding(this.controls, 'enablePan');
     }
 
     setInstance() {
@@ -28,14 +64,20 @@ export default class Camera{
             1,
             600
         );
+        this.instance.position.x = -31.5;
+        this.instance.position.y = 5;
         this.instance.position.z = 100
-        this.instance.position.y = 20
     }
 
     setControls() {
         this.controls = new OrbitControls(this.instance, this.canvas);
         this.controls.enableDamping = true;
 
+        this.controls.maxDistance = 150;
+        this.controls.minDistance = 50;
+        this.controls.minPolarAngle = Math.PI * 0.25;
+        this.controls.maxPolarAngle = Math.PI * 0.525;
+        this.controls.enablePan = false;
     }
 
     setResizeLister() {

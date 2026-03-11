@@ -5,7 +5,7 @@ body {
     overflow: hidden;
   }
   
-  .overlay{
+.overlay{
     opacity:1;
     background-color:rgb(0, 0, 0);
     position:fixed;
@@ -64,3 +64,15 @@ body {
 @media (hover: hover) and (pointer: fine) {
     .start:hover { color: #9effe7; }
   }
+
+.hint {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Amatic SC';
+    z-index: 10;
+    opacity: 0.8;
+}

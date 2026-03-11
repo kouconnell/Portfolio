@@ -3,7 +3,7 @@ import * as THREE from "three";
 import App from "../App.js";
 import Physics from "./Physics.js";
 import Environment from "./Environment.js";
-import Character from "./Character.js";
+// import Character from "./Character.js";
 // import CharacterController from "./CharacterController.js";
 // import AnimationController from "./AnimationController.js";
 
@@ -20,7 +20,7 @@ export default class World {
     const unsub = appStateStore.subscribe((state) => {
       if (state.physicsReady && state.assetsReady) {
         this.environment = new Environment();
-        this.character = new Character();
+        // this.character = new Character();
         // this.characterController = new CharacterController();
         // this.animationController = new AnimationController();
         unsub();

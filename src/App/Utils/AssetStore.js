@@ -2,7 +2,7 @@ import { createStore } from 'zustand/vanilla';
 
 const assetsToLoad = [
   {
-    path: `${import.meta.env.BASE_URL}models/ramenShop9.glb`,
+    path: `${import.meta.env.BASE_URL}models/ramenShop11.glb`,
     id: 'environment',
     type: 'model'
   },

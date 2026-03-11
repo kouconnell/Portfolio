@@ -20,42 +20,42 @@ export default class Camera{
         this.setControls()
         this.setResizeLister()
 
-        this.cameraFolder = this.pane.addFolder({ title: 'camera' });
-        this.position = this.cameraFolder.addFolder({ title: 'cameraPosition' });
-        this.position.addBinding(this.instance.position, 'x', {
-            min: -40,
-            max: 20,
-            step: 0.1,
-        });
-        this.position.addBinding(this.instance.position, 'y', {
-            min: -20,
-            max: 20,
-            step: 0.1,
-        });
-        this.position.addBinding(this.instance.position, 'z', {
-            min: -20,
-            max: 100,
-            step: 0.1,
-        });
-        this.target = this.cameraFolder.addFolder({ title: 'cameraTarget' });
-        this.target.addBinding(this.controls.target, 'x', {
-            min: -20,
-            max: 20,
-            step: 0.1,
-        });
-        this.controls.target.y = 20;
-        this.target.addBinding(this.controls.target, 'y', {
-            min: -20,
-            max: 20,
-            step: 0.1,
-        });
-        this.target.addBinding(this.controls.target, 'z', {
-            min: -20,
-            max: 20,
-            step: 0.1,
-        });
-        this.cameraFolder.addBinding(this.controls, 'enablePan');
-    }
+    //     this.cameraFolder = this.pane.addFolder({ title: 'camera' });
+    //     this.position = this.cameraFolder.addFolder({ title: 'cameraPosition' });
+    //     this.position.addBinding(this.instance.position, 'x', {
+    //         min: -40,
+    //         max: 20,
+    //         step: 0.1,
+    //     });
+    //     this.position.addBinding(this.instance.position, 'y', {
+    //         min: -20,
+    //         max: 20,
+    //         step: 0.1,
+    //     });
+    //     this.position.addBinding(this.instance.position, 'z', {
+    //         min: -20,
+    //         max: 100,
+    //         step: 0.1,
+    //     });
+    //     this.target = this.cameraFolder.addFolder({ title: 'cameraTarget' });
+    //     this.target.addBinding(this.controls.target, 'x', {
+    //         min: -20,
+    //         max: 20,
+    //         step: 0.1,
+    //     });
+    //     this.controls.target.y = 20;
+    //     this.target.addBinding(this.controls.target, 'y', {
+    //         min: -20,
+    //         max: 20,
+    //         step: 0.1,
+    //     });
+    //     this.target.addBinding(this.controls.target, 'z', {
+    //         min: -20,
+    //         max: 20,
+    //         step: 0.1,
+    //     });
+    //     this.cameraFolder.addBinding(this.controls, 'enablePan');
+    // }
 
     setInstance() {
         this.instance = new THREE.PerspectiveCamera(

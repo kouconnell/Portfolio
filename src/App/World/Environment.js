@@ -151,10 +151,7 @@ export default class Environment {
           }
         })
       }
-
     }
-
-
   }
 
   addLights() {
@@ -254,6 +251,8 @@ export default class Environment {
 
     // Ramen arrow
     createRectLight(0xff00ff, 4, 3.5, 7, [15.5, 15, 14.4], [23, 14, 14.4]);
+
+    createRectLight(0xffd6a3, 3, 12, 6, [8, 14.4, 15.5], [8, -35.6, 15.5])
   }
 
   // addGround() {

@@ -17596,37 +17596,7 @@ void main() {
   }));
   class xm {
     constructor() {
-      this.app = new xi(), this.canvas = this.app.canvas, this.sizesStore = C9, this.sizes = this.sizesStore.getState(), this.pane = this.app.gui.pane, this.setInstance(), this.setControls(), this.setResizeLister(), this.cameraFolder = this.pane.addFolder({
-        title: "camera"
-      }), this.position = this.cameraFolder.addFolder({
-        title: "cameraPosition"
-      }), this.position.addBinding(this.instance.position, "x", {
-        min: -40,
-        max: 20,
-        step: 0.1
-      }), this.position.addBinding(this.instance.position, "y", {
-        min: -20,
-        max: 20,
-        step: 0.1
-      }), this.position.addBinding(this.instance.position, "z", {
-        min: -20,
-        max: 100,
-        step: 0.1
-      }), this.target = this.cameraFolder.addFolder({
-        title: "cameraTarget"
-      }), this.target.addBinding(this.controls.target, "x", {
-        min: -20,
-        max: 20,
-        step: 0.1
-      }), this.controls.target.y = 20, this.target.addBinding(this.controls.target, "y", {
-        min: -20,
-        max: 20,
-        step: 0.1
-      }), this.target.addBinding(this.controls.target, "z", {
-        min: -20,
-        max: 20,
-        step: 0.1
-      }), this.cameraFolder.addBinding(this.controls, "enablePan");
+      this.app = new xi(), this.canvas = this.app.canvas, this.sizesStore = C9, this.sizes = this.sizesStore.getState(), this.pane = this.app.gui.pane, this.setInstance(), this.setControls(), this.setResizeLister();
     }
     setInstance() {
       this.instance = new st(35, this.sizes.width / this.sizes.height, 1, 600), this.instance.position.x = -31.5, this.instance.position.y = 5, this.instance.position.z = 100;
@@ -56641,6 +56611,14 @@ void main() {
         23,
         14,
         14.4
+      ]), t(16766627, 3, 12, 6, [
+        8,
+        14.4,
+        15.5
+      ], [
+        8,
+        -35.6,
+        15.5
       ]);
     }
   }

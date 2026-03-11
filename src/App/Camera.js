@@ -55,7 +55,7 @@ export default class Camera{
     //         step: 0.1,
     //     });
     //     this.cameraFolder.addBinding(this.controls, 'enablePan');
-    // }
+    }
 
     setInstance() {
         this.instance = new THREE.PerspectiveCamera(

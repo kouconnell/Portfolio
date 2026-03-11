@@ -17596,7 +17596,7 @@ void main() {
   }));
   class xm {
     constructor() {
-      this.app = new xi(), this.canvas = this.app.canvas, this.sizesStore = C9, this.sizes = this.sizesStore.getState(), this.pane = this.app.gui.pane, this.setInstance(), this.setControls(), this.setResizeLister();
+      this.app = new xi(), this.canvas = this.app.canvas, this.sizesStore = C9, this.sizes = this.sizesStore.getState(), this.pane = this.app.gui.pane, this.setInstance(), this.setControls(), this.setResizeLister(), this.controls.target.y = 20;
     }
     setInstance() {
       this.instance = new st(35, this.sizes.width / this.sizes.height, 1, 600), this.instance.position.x = -31.5, this.instance.position.y = 5, this.instance.position.z = 100;
